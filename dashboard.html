@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ixe berg music - Dashboard Info</title>
+            <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #1a202c;
+            user-select: none;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+a {
+          color: #333;
+            text-decoration: none;
+            font-weight: bold;
+          }a:hover {
+            text-decoration: underline;
+            }
+        nav {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+.list {
+            margin-left: 20px;
+          }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            border-bottom: 3px solid #333;
+            padding-bottom: 5px;
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        code {
+            background: #edf2f7;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: #e53e3e;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        pre {
+            background: #1a202c;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        pre code {
+            color: #a3bffa;
+        }
+
+        
+    footer .copyright {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      font-size: 12px;
+      color: #999;
+    }
+
+       
+        
+        .tracks {
+            max-height: 300px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+          }
+          ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+        
+        
+          .new {
+            background-color: #333;
+            padding: 2px;
+            color:#fff;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+        .info {
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .infolink {
+            text-decoration: none;
+            font-weight: normal;
+        }
+        .infolink:hover {
+            color: #333;
+            text-decoration: none;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a style="color:#fff;text-decoration:none;font-weight:bold;" href="https://ibmlad.neocities.org">ixe berg music</a></h1>
+        <p>Overview of features and accessibility of our artist dashboard.</p>
+    </header>
+
+    <nav>
+    <a href="https://ibmlad.neocities.org/social">Links</a>
+    <a style="text-decoration: underline;" href="#">Artists</a>
+    <a href="https://ixebergmusic.com/faq">FAQ</a>
+    <a href="https://ixebergmusic.com/label">Label</a><br><br>
+    <a href="https://ibmlad.neocities.org/dashboard/view">Continue to Dashboard</a>
+    </nav>
+
+    <div class="container">
+        <section id="introduction">
+            <h2>Desktop Dashboard</h2>
+            <a class="infolink" href="https://ibmlad.neocities.org/dashboard/updates">
+            <div class="info">
+                <h5>Updates: 2/2/2025</h5>
+                <ul class="list">
+                    <li><strong>User Eperience:</strong> Fixed submitting the form to log in not working. Resolved 2/2/2025.</li>
+                    <li><strong>Users:</strong> Added developer account for everyone to track progress on new additions. Username: Dev Password: ixeberg</li>
+                    <li><strong>View Switch:</strong> Use the selector in the bottom right corner to change views, current projects and past ones.</li>
+                </ul>
+            </div>
+            </a>
+        </section>
+
+        <section style="overflow-x: hidden;">
+        <h2>Mobile Dashboard</h2>
+        <a class="infolink" href="https://ibmlad.neocities.org/dashboard/updates">
+            <div class="info">
+                <h5>Launch: 2/28/2025</h5>
+                <ul class="list">
+                    <li><strong>User Interface:</strong> Text sizes will be updated to ensure that it is correctly visible on mobile.</li>
+                    <li><strong>User Experience:</strong> Animations will be added to add smoothing on mobile.</li>
+                    <li><strong>Functionality:</strong> Active projects visible after signing in. Credentials will be the same on each instance.</li>
+                    <li><strong>View Switch:</strong> May not be available. We will test as much as we can to make sure that it works as intended.</li>
+                </ul>
+            </div>
+            </a>
+    </section>
+
+        <section>
+            <h2>Sign-In Credentials Requirements</h2>
+            <div>
+                <ul>
+        <li>
+            <strong>Contact ixe berg:</strong>  
+            Reach out to ixe berg directly to receive your unique artist username.
+        </li>
+        <li>
+            <strong>Create a Password:</strong>  
+            Once you have your username, set up a secure password. Ensure it is at least 8 characters long and includes a mix of letters, numbers, and symbols for security.
+        </li>
+        <li>
+            <strong>Submit Personal Details:</strong>  
+            Provide your full name, contact information, and any relevant artist portfolio or work samples, if requested.
+        </li>
+        <li>
+            <strong>Agree to Terms:</strong>  
+            Review and agree to the terms and conditions provided by ixe berg music.
+        </li>
+        <li>
+            <strong>Confirmation:</strong>  
+            Wait for an email or direct message confirming your credentials and access to services.
+        </li>
+    </ul>
+    <p>If you’re ready to begin, contact ixe berg to get started!</p>
+            </div>
+        </section>
+<section>
+            <h2>Artist TOS</h2>
+            <div >
+                <p>Welcome to ixe berg music Label (“ixe berg music”). By entering into a professional relationship with us, you agree to the following Terms of Service. These terms outline the mutual responsibilities, rights, and obligations between the artist (“You” or “Artist”) and ixe berg music.</p>
+
+    
+
+    <h4>1. Acceptance of Terms</h4>
+    <p>By signing any agreement or contract with ixe berg music, you accept and agree to abide by these Terms of Service. If you do not agree to these terms, you may not engage with our services or represent our label.</p>
+
+    
+
+    <h4>2. Services Provided</h4>
+    <p>ixe berg music offers the following services to signed artists for free:</p>
+    <ul>
+        <li>Custom Beat Production</li>
+        <li>Mixing and Mastering</li>
+        <li>Songwriting</li>
+        <li>Music Video Production</li>
+        <li>Promotional Support</li>
+        <li>Other music-related services as agreed upon in the artist’s contract</li>
+    </ul>
+
+    <p>Details of each service are provided in the respective agreements for transparency and mutual understanding.</p>
+
+    
+
+    <h4>3. Exclusive Representation</h4>
+    <p>Artists signed to ixe berg music agree to represent the label exclusively for all music-related projects unless otherwise specified in their contract. During the contract term, you may not release music, videos, or promotional content through another label without prior written consent.</p>
+
+    
+
+    <h4>4. Royalties and Revenue Sharing</h4>
+    <p>Revenue generated from music sales, streaming, merchandise, and performances will be shared between the Artist and ixe berg music. Specific percentages will be outlined in your artist agreement. Revenue reports will be provided quarterly.</p>
+
+    
+
+    <h4>5. Intellectual Property Rights</h4>
+    <ul>
+        <li><strong>Beats and Instrumentals</strong>: Custom beats created by ixe berg music for your tracks remain the intellectual property of the label unless exclusive rights are purchased.</li>
+        <li><strong>Songs and Lyrics</strong>: Ownership of songs and lyrics will be determined by the specific agreement reached between the Artist and ixe berg music.</li>
+        <li><strong>Music Videos</strong>: All music videos produced by ixe berg music are co-owned unless otherwise specified.</li>
+    </ul>
+
+    
+
+    <h4>6. Promotional Obligations</h4>
+    <p>ixe berg music will promote your music through its platforms at no additional cost if you are signed to the label. You are expected to actively engage in promotional activities, including interviews, social media appearances, and performances.</p>
+
+    
+
+    <h4>7. Conduct</h4>
+    <p>Artists representing ixe berg music are expected to:</p>
+    <ul>
+        <li>Maintain professionalism in all dealings.</li>
+        <li>Adhere to ethical standards in their music and public conduct.</li>
+        <li>Avoid engaging in activities that may harm the reputation of ixe berg music.</li>
+    </ul>
+
+    
+
+    <h4>8. Termination of Agreement</h4>
+    <p>Either party may terminate the agreement with prior notice as stipulated in the contract. Upon termination:</p>
+    <ul>
+        <li>All pending payments must be settled.</li>
+        <li>Rights to unreleased music or videos will revert to the respective parties as per the agreement.</li>
+        <li>Promotional support and access to services will cease.</li>
+    </ul>
+
+    
+
+    <h4>9. Confidentiality</h4>
+    <p>Both parties agree to keep sensitive information confidential, including but not limited to financial terms, creative processes, and contractual details.</p>
+
+    
+
+    <h4>10. Liability Limitations</h4>
+    <p>ixe berg music is not liable for losses incurred due to unforeseen circumstances, including but not limited to technical failures, market conditions, or third-party actions.</p>
+
+    
+
+    <h4>11. Amendments</h4>
+    <p>ixe berg music reserves the right to amend these Terms of Service. Artists will be notified of changes, and continued engagement constitutes acceptance of updated terms.</p>
+
+    
+
+    <h4>12. Dispute Resolution</h4>
+    <p>Disputes will be resolved through negotiation. If unresolved, disputes will be subject to arbitration under the laws of Florida.</p>
+
+    
+
+    <h4>13. Governing Law</h4>
+    <p>These Terms of Service are governed by the laws of Florida.</p>
+
+    
+
+    <p><strong>By signing with ixe berg music, you acknowledge that you have read, understood, and agreed to these Terms of Service.</strong></p>
+            </div>
+        </section>
+        <footer>
+     
+    <div class="copyright">
+      &copy; <script>document.write(new Date().getFullYear());</script> ixe berg music. All rights reserved.
+    </div>
+  </footer>
+    <script>
+    // Disable right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+// Disable common keyboard shortcuts (F12, Ctrl+Shift+I, etc.)
+document.onkeydown = (e) => {
+  if (
+    event.keyCode === 123 || // F12
+    (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
+    (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
+    (e.ctrlKey && e.keyCode === 85) // Ctrl+U
+  ) {
+    return false;
+  }
+};
+    </script>
+</body>
+</html>
