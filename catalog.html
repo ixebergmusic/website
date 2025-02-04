@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ixe berg music - Browse Beats</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            user-select:none;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 10000px;
+            max-width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+a {
+          color: #333;
+            text-decoration: none;
+            font-weight: bold;
+          }a:hover {
+            text-decoration: underline;
+            }
+        nav {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        width: 10000px;
+            max-width: 100%;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .beat-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            border-top: 1px solid #eee;
+        }
+        .beat-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+        }
+        .beat-card h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+                section {
+            margin-bottom: 40px;
+        }
+
+        section .2h33 {
+            border-bottom: 3px solid #333;
+            padding-bottom: 5px;
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .beat-card p {
+            color: #555;
+            margin: 5px 0;
+        }
+        .beat-card audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+                .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+        .disclaim {
+          position: fixed;
+          bottom: 10px;
+          text-align: center;
+          color: #ccc;
+          }
+              footer .copyright {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      padding-top: 10px;
+      font-size: 12px;
+      color: #999;
+    }
+    .ixeTitle {position:absolute;left:10px;top:5px;}
+    @media (max-width: 915px) {
+      .ixeTitle {position:static;text-align:center;left:auto;top:auto;}
+}
+.purchase {color: #fff;}
+    </style>
+</head>
+<body>
+    <nav>
+    <p class="ixeTitle">Browse ixe berg's beats!</p><br>
+        <a href="https://ibmlad.neocities.org/social">Links</a>
+    <a href="https://ibmlad.neocities.org/dashboard">Artists</a>
+    <a href="https://ixebergmusic.com/faq">FAQ</a>
+    <a href="https://ixebergmusic.com/label">Label</a>
+    </nav>
+
+    <section class="container">
+  <h3 style="border-bottom: 3px solid #333;
+            padding-bottom: 5px;
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 15px;">How It Works:</h3>
+  <p><strong>1. Browse the Catalog:</strong></p>
+  <p>Discover a wide selection of professionally crafted beats designed to inspire and elevate your music projects.</p>
+
+  <p><strong>2. Purchase a Beat for $19.99:</strong></p>
+  <p>Each beat is priced at an affordable $19.99. Once purchased, the beat is yours to use <strong>for profit</strong>, whether it's for streaming, live performances, or other monetized platforms. Beats sold at this price remain available for other customers to purchase.</p>
+
+  <p><strong>3. Upgrade to Exclusive Rights for $50:</strong></p>
+  <p>Want to ensure your beat is uniquely yours? For a one-time payment of $50, you can purchase <strong>exclusive rights</strong> to the beat. Once exclusive rights are purchased, the beat will be <strong>permanently removed</strong> from the catalog, giving you full creative control.</p>
+</section>
+<section class="container">
+    <div class="beat-list" id="beat-list">
+        <!-- Beats will be dynamically loaded here -->
+    </div>
+    </section>
+<section class="container" id="purchase">
+  <h3 style="border-bottom: 3px solid #333;
+            padding-bottom: 5px;
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 15px;">Why Choose the ixe berg Music Catalog?</h3>
+  <p><strong>Affordable Pricing:</strong> Access professional-grade beats without breaking the bank.</p>
+  <p><strong>Free for Profit:</strong> Use the beats for commercial purposes without worrying about additional fees or royalties.</p>
+  <p><strong>Exclusive Options:</strong> Secure a unique sound by upgrading to exclusive rights.</p>
+  <p><strong>Diverse Styles:</strong> Our catalog will feature a wide range of beats suitable for every genre and mood.</p>
+  <p>If you find a beat that you like and want to buy you can send an email to <strong>support@ixebergmusic.com</strong>. Make sure to input the title of the track and purchase details will be sent to you within 2-3 business days.</p>
+</section>
+    
+    <footer>
+    <div class="copyright">
+      &copy; <script>document.write(new Date().getFullYear());</script> ixe berg music. All rights reserved.
+    </div>
+  </footer>
+    <script src="/audio/fetch.js"></script>
+    <script>
+    // Disable right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+// Disable common keyboard shortcuts (F12, Ctrl+Shift+I, etc.)
+document.onkeydown = (e) => {
+  if (
+    event.keyCode === 123 || // F12
+    (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
+    (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
+    (e.ctrlKey && e.keyCode === 85) // Ctrl+U
+  ) {
+    return false;
+  }
+};
+    </script>
+</body>
+</html>
